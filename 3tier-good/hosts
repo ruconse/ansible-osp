@@ -1,0 +1,18 @@
+[all:vars]
+#GUID=b9f3
+
+[internal:vars]
+
+###########################################################################
+### Ansible Vars
+###########################################################################
+timeout=60
+ansible_become=yes
+ansible_ssh_user=ec2-user
+
+[appdbs:children]
+tag_AnsibleGroup_appdbs
+[apps:children]
+tag_AnsibleGroup_apps
+[frontends:children]
+tag_AnsibleGroup_frontends
