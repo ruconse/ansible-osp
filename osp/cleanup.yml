@@ -1,0 +1,4 @@
+- hosts: jumpbox
+#  become: yes
+  roles:
+     - osp-cleanup
